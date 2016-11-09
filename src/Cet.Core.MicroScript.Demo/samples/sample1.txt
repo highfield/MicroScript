@@ -1,0 +1,8 @@
+﻿//get external variable "a" and push it on the stack
+	push	a
+
+//get external variable "b" and push it on the stack
+	push	b
+
+//add them
+	add

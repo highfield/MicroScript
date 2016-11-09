@@ -1,0 +1,21 @@
+﻿	mov		$N, N
+	mov		$i, #0
+	mov		$total, #0
+
+loop:
+	push	$i
+	push	$i
+	push	#2
+	mul
+	add
+
+	push	$total
+	add
+	pop		$total
+
+	inc		$i
+	cmp		$i, $N
+	jne		loop
+
+stop:
+	push	$total

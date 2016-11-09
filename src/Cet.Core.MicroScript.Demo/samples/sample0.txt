@@ -1,0 +1,12 @@
+﻿//here is a simple comment
+	nop
+	push	var1
+	push	#false
+	push	#123
+	push	#-456
+	push	#3.14159
+	push	#"hello! this is a string..."
+label1:
+
+label2:	nop
+label3:	pop	var2

@@ -1,0 +1,21 @@
+﻿// ---------------------------
+//	Fibonacci sequence
+// ---------------------------
+	mov		$n, #100	//max results count
+
+	mov		$a, #0		//init pair
+	mov		$b, #1
+
+loop:
+	push	$a			//sum the last pair
+	push	$b
+	add
+
+	mov		$a, $b
+	pop		$b			//update the pair
+
+	mov		out, $b		//issue the sum to the host
+	
+	dec		$n			//decrement counter
+	cmp		$n, #0
+	jne		loop		//loop until zero is reached
